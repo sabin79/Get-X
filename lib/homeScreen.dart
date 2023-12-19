@@ -24,11 +24,11 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Card(
             child: ListTile(
-                title: const Text("Dialog with Getx"),
+                title: const Text("Dialog Alert"),
                 subtitle: const Text("Getx dialog alert with getx"),
                 onTap: () {
                   Get.defaultDialog(
-                      title: "Delete chat",
+                      title: "Just say it ",
                       titlePadding: const EdgeInsets.only(top: 40),
                       contentPadding: const EdgeInsets.all(40),
                       // middleText: "Are you sure you want to delete this chat?",
@@ -43,12 +43,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         onPressed: () {
                           Get.back();
                         },
-                        child: const Text("No"),
+                        child: const Text("no"),
                       ),
                       content: const Column(
                         children: [
-                          Text("Are you sure is the the correct dialog box?"),
-                          Text("Are you sure you want to delete this chat?"),
+                          Text(
+                              "Just say his/ her name through whom you know me "),
+                          // Text("Are you sure you want to delete this chat?"),
                         ],
                       ));
                 }),
