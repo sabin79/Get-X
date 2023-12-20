@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const NavigatorScreen(),
       getPages: [
-        GetPage(name: '/', page: () => const NavigatorScreen()),
+        GetPage(name: '/navigator', page: () => const NavigatorScreen()),
         GetPage(name: '/screenOne', page: () => ScreenOne()),
         GetPage(name: '/screenTwo', page: () => const ScreenTwo()),
       ],

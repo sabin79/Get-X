@@ -34,9 +34,8 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
                   // Get.to(const ScreenOne(
                   //   name: "Sabin dahal",
                   // ));
-                  Get.toNamed('/screenOne', arguments: {
-                    "name": "Sabin Dahal",
-                  });
+                  Get.toNamed('/screenOne',
+                      arguments: ["Sabin Dahal", "Flutter Developer"]);
                 },
                 child: const Center(
                     child: Text(
