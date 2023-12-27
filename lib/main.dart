@@ -5,6 +5,7 @@ import 'package:example_app_getx/example_two/Example_two_Screen.dart';
 import 'package:example_app_getx/homeScreen.dart';
 import 'package:example_app_getx/language_change/language_page.dart';
 import 'package:example_app_getx/language_change/languages.dart';
+import 'package:example_app_getx/mark_favourite/favourite_screen.dart';
 import 'package:example_app_getx/navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const ExampleThreeScreen(),
+      home: const FavouriteScreen(),
       // getPages: [
       //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: () => ScreenOne()),
