@@ -41,22 +41,22 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
               child: const Center(
                 child: Text("Center"),
               )),
-          //     // Center(
-          //     //   child: TextButton(
-          //     //       onPressed: () {
-          //     //         // Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenOne()));
-          //     //         // Get.to(const ScreenOne(
-          //     //         //   name: "Sabin dahal",
-          //     //         // ));
-          //     //         Get.toNamed('/screenOne',
-          //     //             arguments: ["Sabin Dahal", "Flutter Developer"]);
-          //     //       },
-          //     //       child: const Center(
-          //     //           child: Text(
-          //     //         "Go to next screen",
-          //     //         style: TextStyle(color: Colors.green, fontSize: 20),
-          //     //       ))),
-          //     // )
+          Center(
+            child: TextButton(
+                onPressed: () {
+                  // Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenOne()));
+                  // Get.to(const ScreenOne(
+                  //   name: "Sabin dahal",
+                  // ));
+                  Get.toNamed('/screenOne',
+                      arguments: ["Sabin Dahal", "Flutter Developer"]);
+                },
+                child: const Center(
+                    child: Text(
+                  "Go to next screen",
+                  style: TextStyle(color: Colors.green, fontSize: 20),
+                ))),
+          )
         ],
       ),
     );

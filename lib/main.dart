@@ -1,3 +1,4 @@
+import 'package:example_app_getx/GetHome.dart';
 import 'package:example_app_getx/ScreenOne.dart';
 import 'package:example_app_getx/ScreenTwo.dart';
 import 'package:example_app_getx/homeScreen.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const LanguagePage(),
+      home: const GetHomeScreen(),
       // getPages: [
       //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: () => ScreenOne()),
