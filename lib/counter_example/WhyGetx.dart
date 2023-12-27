@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:get/get.dart';
-import 'package:example_app_getx/firstexample/counter_controller.dart';
+import 'package:example_app_getx/counter_example/counter_controller.dart';
 import 'package:flutter/material.dart';
 
 class GetHomeScreen extends StatefulWidget {
