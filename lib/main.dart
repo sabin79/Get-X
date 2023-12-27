@@ -1,6 +1,8 @@
 import 'package:example_app_getx/ScreenOne.dart';
 import 'package:example_app_getx/ScreenTwo.dart';
 import 'package:example_app_getx/homeScreen.dart';
+import 'package:example_app_getx/language_page.dart';
+import 'package:example_app_getx/languages.dart';
 import 'package:example_app_getx/navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,18 +18,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      locale: const Locale('en', 'US'),
+      translations: Languages(),
+      fallbackLocale: const Locale('en', 'US'),
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const NavigatorScreen(),
-      getPages: [
-        GetPage(name: '/navigator', page: () => const NavigatorScreen()),
-        GetPage(name: '/screenOne', page: () => ScreenOne()),
-        GetPage(name: '/screenTwo', page: () => const ScreenTwo()),
-      ],
+      home: const LanguagePage(),
+      // getPages: [
+      //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
+      //   GetPage(name: '/screenOne', page: () => ScreenOne()),
+      //   GetPage(name: '/screenTwo', page: () => const ScreenTwo()),
+      // ],
     );
   }
 }
