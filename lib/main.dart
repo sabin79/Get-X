@@ -1,4 +1,4 @@
-import 'package:example_app_getx/GetHome.dart';
+import 'package:example_app_getx/WhyGetx.dart';
 import 'package:example_app_getx/ScreenOne.dart';
 import 'package:example_app_getx/ScreenTwo.dart';
 import 'package:example_app_getx/homeScreen.dart';

@@ -1,5 +1,6 @@
 import 'dart:async';
-
+import 'package:get/get.dart';
+import 'package:example_app_getx/firstexample/counter_controller.dart';
 import 'package:flutter/material.dart';
 
 class GetHomeScreen extends StatefulWidget {
@@ -10,15 +11,16 @@ class GetHomeScreen extends StatefulWidget {
 }
 
 class _GetHomeScreenState extends State<GetHomeScreen> {
-  int x = 0;
+  final CounterController controller = Get.put(CounterController());
+  // int counter = 0;
 
   @override
   void initState() {
     super.initState();
-    Timer.periodic(const Duration(seconds: 1), (timer) {
-      x++;
-      setState(() {});
-    });
+    // Timer.periodic(const Duration(seconds: 1), (timer) {
+    //   x++;
+    //   setState(() {});
+    // });
   }
 
   @override
@@ -29,15 +31,18 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
         title: const Text('Getx toutorial'),
       ),
       body: Center(
-        child: Text(
-          x.toString(),
-          style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-        ),
+        child: Obx(() {
+          print("rebuild");
+
+          return Text(
+            controller.counter.toString(),
+            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          );
+        }),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          x++;
-          setState(() {});
+          controller.incrementCounter();
         },
         child: const Icon(Icons.add),
       ),
