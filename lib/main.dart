@@ -9,6 +9,8 @@ import 'package:example_app_getx/navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'example_three/example_three_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const ExampleTwoScreen(),
+      home: const ExampleThreeScreen(),
       // getPages: [
       //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: () => ScreenOne()),
