@@ -24,25 +24,39 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
             fontWeight: FontWeight.bold),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: TextButton(
-                onPressed: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenOne()));
-                  // Get.to(const ScreenOne(
-                  //   name: "Sabin dahal",
-                  // ));
-                  Get.toNamed('/screenOne',
-                      arguments: ["Sabin Dahal", "Flutter Developer"]);
-                },
-                child: const Center(
-                    child: Text(
-                  "Go to next screen",
-                  style: TextStyle(color: Colors.green, fontSize: 20),
-                ))),
-          )
+          Container(
+            height: Get.height * .1,
+            width: Get.width * .8,
+            color: Colors.greenAccent,
+            child: const Center(
+              child: Text("Center"),
+            ),
+          ),
+          Container(
+              height: Get.height * .1,
+              width: Get.width * .8,
+              // height: MediaQuery.of(context).size.height * .1,
+              color: Colors.yellow,
+              child: const Center(
+                child: Text("Center"),
+              )),
+          //     // Center(
+          //     //   child: TextButton(
+          //     //       onPressed: () {
+          //     //         // Navigator.push(context, MaterialPageRoute(builder: (context) => const ScreenOne()));
+          //     //         // Get.to(const ScreenOne(
+          //     //         //   name: "Sabin dahal",
+          //     //         // ));
+          //     //         Get.toNamed('/screenOne',
+          //     //             arguments: ["Sabin Dahal", "Flutter Developer"]);
+          //     //       },
+          //     //       child: const Center(
+          //     //           child: Text(
+          //     //         "Go to next screen",
+          //     //         style: TextStyle(color: Colors.green, fontSize: 20),
+          //     //       ))),
+          //     // )
         ],
       ),
     );
