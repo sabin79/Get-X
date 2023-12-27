@@ -1,9 +1,10 @@
-import 'package:example_app_getx/WhyGetx.dart';
+import 'package:example_app_getx/counter_example/WhyGetx.dart';
 import 'package:example_app_getx/ScreenOne.dart';
 import 'package:example_app_getx/ScreenTwo.dart';
+import 'package:example_app_getx/example_two/Example_two_Screen.dart';
 import 'package:example_app_getx/homeScreen.dart';
-import 'package:example_app_getx/language_page.dart';
-import 'package:example_app_getx/languages.dart';
+import 'package:example_app_getx/language_change/language_page.dart';
+import 'package:example_app_getx/language_change/languages.dart';
 import 'package:example_app_getx/navigator.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const GetHomeScreen(),
+      home: const ExampleTwoScreen(),
       // getPages: [
       //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: () => ScreenOne()),

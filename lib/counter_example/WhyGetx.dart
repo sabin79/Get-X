@@ -25,14 +25,14 @@ class _GetHomeScreenState extends State<GetHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print("rebuild");
+    // print("rebuild");
     return Scaffold(
       appBar: AppBar(
         title: const Text('Getx toutorial'),
       ),
       body: Center(
         child: Obx(() {
-          print("rebuild");
+          //   print("rebuild");
 
           return Text(
             controller.counter.toString(),
