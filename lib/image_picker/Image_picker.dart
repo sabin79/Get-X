@@ -32,7 +32,7 @@ class _ImagePickerScreenState extends State<ImagePickerScreen> {
             children: [
               Center(
                 child: CircleAvatar(
-                    radius: 50,
+                    radius: 150,
                     backgroundImage: controller.imagePath.isNotEmpty
                         ? FileImage(File(controller.imagePath.toString()))
                         : null),
@@ -41,7 +41,12 @@ class _ImagePickerScreenState extends State<ImagePickerScreen> {
                   onPressed: () {
                     controller.getImage();
                   },
-                  child: const Text("Pick Image")),
+                  child: const Center(
+                    child: Text(
+                      "Pick Image",
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  )),
             ],
           );
         }));

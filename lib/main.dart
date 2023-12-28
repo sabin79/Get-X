@@ -6,6 +6,7 @@ import 'package:example_app_getx/homeScreen.dart';
 import 'package:example_app_getx/image_picker/Image_picker.dart';
 import 'package:example_app_getx/language_change/language_page.dart';
 import 'package:example_app_getx/language_change/languages.dart';
+import 'package:example_app_getx/login_signup/login_screen.dart';
 import 'package:example_app_getx/mark_favourite/favourite_screen.dart';
 import 'package:example_app_getx/navigator.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const ImagePickerScreen(),
+      home: const LoginScreen(),
       // getPages: [
       //   GetPage(name: '/navigator', page: () => const NavigatorScreen()),
       //   GetPage(name: '/screenOne', page: () => ScreenOne()),
